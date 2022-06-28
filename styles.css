@@ -6,6 +6,10 @@
     box-sizing: border-box;
 }
 
+:root {
+    --gridSize: 90px;
+  }
+
 html, body {
     margin: 0;
     padding: 0;
@@ -37,4 +41,22 @@ body {
 .image {
     max-width: 100%;
     height: auto;
+}
+
+
+.grid-container {
+    display: grid;
+    margin-right: auto;
+    margin-left: auto;
+    width: 810px;
+    height: var(--gridSize);
+    grid-template-columns: var(--gridSize) var(--gridSize) var(--gridSize) var(--gridSize) var(--gridSize) var(--gridSize) var(--gridSize) var(--gridSize) var(--gridSize);
+}
+
+
+.grid-item {
+    border: 1px solid rgb(190, 190, 190);
+    margin: 4px;
+    padding: 40px;
+    border-radius: 5px;
 }
