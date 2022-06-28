@@ -8,6 +8,8 @@
 
 :root {
     --gridSize: 90px;
+    --colorOne: aquamarine;
+    --colorTwo: fuchsia;
   }
 
 html, body {
@@ -18,31 +20,6 @@ html, body {
 body {
     background-color: #18191A;
 }
-
-.center {
-    border-radius: 10px;
-    margin-top: 16px;
-    margin-bottom: 16px;
-    margin-right: auto;
-    margin-left: auto;
-    padding: 15px;
-    max-width: 720px;
-    background-color: #242526;
-}
-
-.header {
-    position: relative;
-    font-size: 36px;
-    text-align: center;
-    margin-top: 0px;
-    margin-bottom: 20px;
-}
-
-.image {
-    max-width: 100%;
-    height: auto;
-}
-
 
 .grid-container {
     display: grid;
@@ -57,6 +34,18 @@ body {
 .grid-item {
     border: 1px solid rgb(190, 190, 190);
     margin: 4px;
-    padding: 40px;
     border-radius: 5px;
+}
+
+.circle {
+    background-color: var(--colorOne);
+    border: 0px solid;
+    padding: 36px;
+    margin: 4px;
+    border-radius: 36px;
+}
+
+.status {
+    display: none;
+    background-color: var(--colorOne);
 }
